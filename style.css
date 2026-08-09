@@ -1,0 +1,2171 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #080d12;
+
+    color: white;
+
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+
+    width: 100%;
+
+    height: 85px;
+
+    padding: 0 4%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    z-index: 100;
+}
+
+
+.logo {
+
+    font-size: 30px;
+
+    font-weight: 500;
+}
+
+
+.logo span {
+
+    color: #65e6c2;
+}
+
+
+.navbar nav {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 45px;
+}
+
+
+.navbar nav a {
+
+    color: #eeeeee;
+
+    text-decoration: none;
+
+    font-size: 17px;
+
+    transition: 0.3s;
+}
+
+
+.navbar nav a:hover,
+.navbar nav a.active {
+
+    color: #65e6c2;
+}
+
+
+/* =========================
+   HOME
+========================= */
+
+.home {
+
+    width: 100%;
+
+    min-height: 680px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 110px 8% 30px;
+
+    overflow: hidden;
+
+    background:
+
+        radial-gradient(
+            circle at 68% 55%,
+            rgba(54, 218, 178, 0.18),
+            transparent 25%
+        ),
+
+        #080d12;
+}
+
+
+/* =========================
+   HOME VERTICAL LINE
+========================= */
+
+.vertical-line {
+
+    position: absolute;
+
+    left: 11%;
+
+    top: 85px;
+
+    width: 1px;
+
+    height: 560px;
+
+    background: rgba(101, 230, 194, 0.45);
+}
+
+
+/* =========================
+   HOME CONTENT
+========================= */
+
+.home-content {
+
+    width: 52%;
+
+    position: relative;
+
+    z-index: 5;
+
+    margin-left: 4%;
+}
+
+
+.intro {
+
+    font-size: 25px;
+
+    margin-bottom: 20px;
+
+    color: #eeeeee;
+}
+
+
+.home-content h1 {
+
+    font-size: 58px;
+
+    line-height: 1.12;
+
+    font-weight: 400;
+
+    margin-bottom: 30px;
+}
+
+
+.home-content h1 span {
+
+    color: #65e6c2;
+}
+
+
+/* =========================
+   INTRO BOX
+========================= */
+
+.intro-box {
+
+    width: 500px;
+
+    max-width: 100%;
+
+    padding: 14px 18px;
+
+    border: 2px solid #65e6c2;
+
+    margin-bottom: 32px;
+}
+
+
+.intro-box p {
+
+    color: #d5d5d5;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   CONTACT BUTTON
+========================= */
+
+.contact-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 10px 15px 10px 20px;
+
+    background: #65e6c2;
+
+    color: #08100e;
+
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+
+.contact-btn span {
+
+    width: 32px;
+
+    height: 32px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: white;
+
+    font-size: 20px;
+}
+
+
+.contact-btn:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 25px rgba(101, 230, 194, 0.25);
+}
+
+
+/* =========================
+   HOME IMAGE
+========================= */
+
+.home-image {
+
+    width: 48%;
+
+    height: 550px;
+
+    position: absolute;
+
+    right: 3%;
+
+    bottom: 0;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: center;
+
+    z-index: 4;
+}
+
+
+.home-image img {
+
+    width: 440px;
+
+    height: 530px;
+
+    max-width: 100%;
+
+    object-fit: contain;
+
+    object-position: bottom;
+
+    position: relative;
+
+    z-index: 3;
+
+    filter:
+        drop-shadow(
+            0 0 30px rgba(101, 230, 194, 0.15)
+        );
+}
+
+
+/* =========================
+   HOME GLOW
+========================= */
+
+.image-glow {
+
+    position: absolute;
+
+    width: 350px;
+
+    height: 350px;
+
+    border-radius: 50%;
+
+    background: rgba(101, 230, 194, 0.12);
+
+    filter: blur(65px);
+
+    top: 25%;
+}
+
+
+/* =========================
+   ABSTRACT SHAPE
+========================= */
+
+.abstract-shape {
+
+    position: absolute;
+
+    width: 320px;
+
+    height: 420px;
+
+    right: -80px;
+
+    bottom: -100px;
+
+    background: rgba(85, 125, 135, 0.12);
+
+    clip-path: polygon(
+        45% 0,
+        100% 18%,
+        85% 100%,
+        20% 72%,
+        0 25%
+    );
+
+    transform: rotate(10deg);
+}
+
+
+/* =========================
+   GLOW DOTS
+========================= */
+
+.glow {
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    background: #65e6c2;
+
+    box-shadow:
+        0 0 15px #65e6c2;
+}
+
+
+.glow-one {
+
+    width: 12px;
+
+    height: 12px;
+
+    left: 6%;
+
+    bottom: 38%;
+}
+
+
+.glow-two {
+
+    width: 6px;
+
+    height: 6px;
+
+    left: 4%;
+
+    bottom: 30%;
+}
+
+
+/* =================================================
+   ABOUT SECTION
+================================================= */
+
+.about {
+
+    width: 100%;
+
+    min-height: 650px;
+
+    position: relative;
+
+    background: #080d12;
+
+    overflow: hidden;
+
+    padding-top: 45px;
+}
+
+
+/* =========================
+   ABOUT TITLE
+========================= */
+
+.about h2 {
+
+    text-align: center;
+
+    color: white;
+
+    font-size: 42px;
+
+    font-weight: 400;
+
+    margin: 0;
+}
+
+
+/* =========================
+   ABOUT LINE
+========================= */
+
+.about-line {
+
+    width: 105px;
+
+    height: 2px;
+
+    background: #65e6c2;
+
+    margin: 14px auto 0;
+
+    position: relative;
+}
+
+
+.about-line::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 35px;
+
+    height: 2px;
+
+    background: white;
+
+    left: 35px;
+
+    top: 5px;
+}
+
+
+/* =================================================
+   ABOUT VERTICAL LINE
+================================================= */
+
+.about-vertical-line {
+
+    position: absolute;
+
+    left: 11%;
+
+    top: 0;
+
+    width: 1px;
+
+    height: 100%;
+
+    background: rgba(101, 230, 194, 0.35);
+
+    z-index: 1;
+}
+
+
+/* =================================================
+   ABOUT THREE IMAGES
+================================================= */
+
+.about-images {
+
+    position: absolute;
+
+    left: 6%;
+
+    top: 70px;
+
+    width: 330px;
+
+    height: 520px;
+
+    z-index: 3;
+}
+
+
+/* =========================
+   COMMON IMAGE
+========================= */
+
+.about-img {
+
+    position: absolute;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.about-img img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+/* =========================
+   IMAGE 1
+   TOP SMALL
+========================= */
+
+.about-img-one {
+
+    width: 100px;
+
+    height: 100px;
+
+    left: 70px;
+
+    top: 0;
+}
+
+
+/* =========================
+   IMAGE 2
+   BIG CENTER
+========================= */
+
+.about-img-two {
+
+    width: 250px;
+
+    height: 250px;
+
+    left: 65px;
+
+    top: 115px;
+}
+
+
+/* =========================
+   IMAGE 3
+   BOTTOM SMALL
+========================= */
+
+.about-img-three {
+
+    width: 100px;
+
+    height: 100px;
+
+    left: 205px;
+
+    top: 385px;
+}
+
+
+/* =================================================
+   ABOUT CONTENT
+================================================= */
+
+.about-content {
+
+    position: absolute;
+
+    width: 48%;
+
+    right: 8%;
+
+    top: 170px;
+
+    padding: 0 50px;
+
+    z-index: 5;
+}
+
+
+.about-content p {
+
+    color: #eeeeee;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    font-style: normal;
+
+    margin: 0;
+}
+
+
+/* =========================
+   QUOTES
+========================= */
+
+.quote {
+
+    position: absolute;
+
+    color: #65e6c2;
+
+    font-family: Georgia, serif;
+
+    font-size: 75px;
+
+    line-height: 1;
+}
+
+
+.quote-left {
+
+    left: 0;
+
+    top: -40px;
+}
+
+
+.quote-right {
+
+    right: 0;
+
+    bottom: -55px;
+}
+
+
+/* =================================================
+   TABLET
+================================================= */
+
+@media (max-width: 1000px) {
+
+    .navbar nav {
+
+        gap: 25px;
+    }
+
+
+    .navbar nav a {
+
+        font-size: 14px;
+    }
+
+
+    .home-content h1 {
+
+        font-size: 48px;
+    }
+
+
+    .home-image img {
+
+        width: 370px;
+    }
+
+
+    /* ABOUT */
+
+    .about-images {
+
+        left: 3%;
+
+        transform: scale(0.85);
+
+        transform-origin: top left;
+    }
+
+
+    .about-content {
+
+        width: 50%;
+
+        right: 3%;
+
+        padding: 0 30px;
+    }
+
+
+    .about-content p {
+
+        font-size: 16px;
+    }
+}
+
+
+/* =================================================
+   MOBILE
+================================================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+
+        height: auto;
+
+        padding: 20px 6%;
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+
+    .navbar nav {
+
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    .navbar nav a {
+
+        font-size: 11px;
+    }
+
+
+    /* =========================
+       HOME
+    ========================= */
+
+    .home {
+
+        min-height: 900px;
+
+        padding: 160px 7% 0;
+
+        display: block;
+    }
+
+
+    .vertical-line {
+
+        left: 6%;
+
+        top: 150px;
+
+        height: 700px;
+    }
+
+
+    .home-content {
+
+        width: 100%;
+
+        margin-left: 4%;
+    }
+
+
+    .intro {
+
+        font-size: 20px;
+    }
+
+
+    .home-content h1 {
+
+        font-size: 38px;
+    }
+
+
+    .intro-box {
+
+        width: 92%;
+    }
+
+
+    /* HOME IMAGE */
+
+    .home-image {
+
+        width: 330px;
+
+        height: 330px;
+
+        position: relative;
+
+        right: auto;
+
+        bottom: auto;
+
+        margin-top: 35px;
+    }
+
+
+    .home-image img {
+
+        width: 200px;
+
+        height: 200px;
+    }
+
+
+    /* =================================================
+       ABOUT MOBILE
+    ================================================= */
+
+    .about {
+
+        min-height: 850px;
+
+        padding-top: 55px;
+    }
+
+
+    .about h2 {
+
+        font-size: 34px;
+    }
+
+
+    .about-line {
+
+        width: 90px;
+    }
+
+
+    /* VERTICAL LINE */
+
+    .about-vertical-line {
+
+        left: 8%;
+
+        top: 0;
+
+        height: 560px;
+    }
+
+
+    /* THREE IMAGES */
+
+    .about-images {
+
+        left: 50%;
+
+        top: 100px;
+
+        width: 310px;
+
+        height: 420px;
+
+        transform: translateX(-50%) scale(0.75);
+
+        transform-origin: top center;
+    }
+
+
+    /* TOP */
+
+    .about-img-one {
+
+        left: 60px;
+
+        top: 0;
+    }
+
+
+    /* BIG */
+
+    .about-img-two {
+
+        left: 35px;
+
+        top: 105px;
+    }
+
+
+    /* BOTTOM */
+
+    .about-img-three {
+
+        left: 190px;
+
+        top: 350px;
+    }
+
+
+    /* CONTENT */
+
+    .about-content {
+
+        width: 88%;
+
+        right: 6%;
+
+        top: 480px;
+
+        padding: 0 30px;
+    }
+
+
+    .about-content p {
+
+        font-size: 15px;
+
+        line-height: 1.7;
+    }
+
+
+    .quote {
+
+        font-size: 60px;
+    }
+
+
+    .quote-left {
+
+        left: 0;
+
+        top: -32px;
+    }
+
+
+    .quote-right {
+
+        right: 0;
+
+        bottom: -45px;
+    }
+
+}
+
+/* =========================
+   SKILLS SECTION
+========================= */
+
+.skills-section {
+    width: 100%;
+    padding: 100px 7%;
+    background: #080d12;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.skills-heading {
+    max-width: 650px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.skills-heading span {
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: #777;
+    font-weight: 600;
+}
+
+.skills-heading h2 {
+    margin: 14px 0;
+    font-size: 46px;
+    font-weight: 500;
+    color: #151515;
+}
+
+.skills-heading h2 b {
+    color: #6c63ff;
+}
+
+.skills-heading p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   SKILLS CONTAINER
+========================= */
+
+.skills-container {
+    max-width: 1150px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+
+/* =========================
+   SKILL CARD
+========================= */
+
+.skill-card {
+    position: relative;
+
+    min-height: 220px;
+    padding: 28px;
+
+    background:ghostwhite;
+
+    border: 1px solid #e7e7e7;
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    transition: 0.4s ease;
+}
+
+
+/* LEFT ACCENT */
+
+.skill-card::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 4px;
+    height: 0;
+
+    background: #6c63ff;
+
+    transition: 0.4s ease;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.skill-logo {
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f1f0ff;
+
+    border-radius: 16px;
+
+    margin-bottom: 25px;
+
+    transition: 0.4s ease;
+}
+
+.skill-logo img {
+    width: 42px;
+    height: 42px;
+
+    object-fit: contain;
+
+    transition: 0.4s ease;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.skill-info h3 {
+    font-size: 21px;
+    color: #181818;
+
+    margin-bottom: 8px;
+
+    transition: 0.3s ease;
+}
+
+.skill-info p {
+    color: #777;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   HOVER
+========================= */
+
+.skill-card:hover {
+    transform: translateY(-9px);
+
+    border-color: #d8d5ff;
+
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+}
+
+.skill-card:hover::before {
+    height: 100%;
+}
+
+.skill-card:hover .skill-logo {
+    background: #6c63ff;
+
+    transform: translateY(-3px);
+}
+
+.skill-card:hover .skill-logo img {
+    transform: scale(1.15) rotate(-5deg);
+}
+
+.skill-card:hover .skill-info h3 {
+    color: #6c63ff;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+    .skills-section {
+        padding: 90px 6%;
+    }
+
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .skills-heading h2 {
+        font-size: 40px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .skills-section {
+        padding: 75px 6%;
+    }
+
+    .skills-heading {
+        margin-bottom: 45px;
+    }
+
+    .skills-heading h2 {
+        font-size: 34px;
+    }
+
+    .skills-heading p {
+        font-size: 13px;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .skill-card {
+        min-height: 200px;
+        padding: 24px;
+    }
+
+    .skill-logo {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 20px;
+    }
+
+    .skill-logo img {
+        width: 38px;
+        height: 38px;
+    }
+
+    .skill-info h3 {
+        font-size: 20px;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 400px) {
+
+    .skills-section {
+        padding: 60px 5%;
+    }
+
+    .skills-heading h2 {
+        font-size: 30px;
+    }
+
+    .skill-card {
+        padding: 21px;
+    }
+}
+/* =========================
+   PROJECTS SECTION
+========================= */
+
+.projects-section {
+    width: 100%;
+    padding: 110px 7%;
+    background: black;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.projects-heading {
+    max-width: 650px;
+    margin: 0 auto 80px;
+    text-align: center;
+}
+
+.projects-heading span {
+    font-size: 12px;
+    letter-spacing: 4px;
+    font-weight: 600;
+    color: violet;
+}
+
+.projects-heading h2 {
+    margin: 14px 0;
+    font-size: 48px;
+    font-weight: 500;
+    color: blue;
+}
+
+.projects-heading h2 strong {
+    color: #2e7d32;
+}
+
+.projects-heading p {
+    color: violet;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   PROJECT CONTAINER
+========================= */
+
+.projects-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+/* =========================
+   PROJECT ITEM
+========================= */
+
+.project-item {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    align-items: center;
+    gap: 70px;
+
+    margin-bottom: 90px;
+}
+
+
+/* REVERSE PROJECT */
+
+.project-item.reverse {
+    grid-template-columns: 1fr 40%;
+}
+
+.project-item.reverse .project-preview {
+    order: 2;
+}
+
+.project-item.reverse .project-details {
+    order: 1;
+}
+
+
+/* =========================
+   PROJECT PREVIEW
+========================= */
+
+.project-preview {
+    width: 100%;
+    height: 250px;
+
+    background: #e3ece4;
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    border: 1px solid #d5e0d6;
+
+    transition: 0.45s ease;
+}
+
+.project-preview img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: 0.6s ease;
+}
+
+
+/* IMAGE HOVER */
+
+.project-item:hover .project-preview {
+    transform: translateY(-7px);
+
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.10);
+}
+
+.project-item:hover .project-preview img {
+    transform: scale(1.06);
+}
+
+
+/* =========================
+   PROJECT DETAILS
+========================= */
+
+.project-details {
+    max-width: 520px;
+}
+
+.project-label {
+    display: inline-block;
+
+    margin-bottom: 12px;
+
+    font-size: 10px;
+    letter-spacing: 3px;
+
+    color: #2e7d32;
+
+    font-weight: 700;
+}
+
+.project-details h3 {
+    margin-bottom: 15px;
+
+    font-size: 32px;
+    font-weight: 600;
+
+    color: palevioletred;
+}
+
+.project-details p {
+    margin-bottom: 20px;
+
+    color: white;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================
+   TECHNOLOGIES
+========================= */
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    margin-bottom: 24px;
+}
+
+.project-tech span {
+    padding: 6px 12px;
+
+    background: #ffffff;
+
+    border: 1px solid #dce6dd;
+
+    border-radius: 20px;
+
+    color: #38643d;
+
+    font-size: 10px;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   SOURCE BUTTON
+========================= */
+
+.source-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    padding: 10px 16px;
+
+    background: #ffffff;
+
+    border: 1px solid #d8e2d9;
+
+    border-radius: 7px;
+
+    color: #222;
+
+    text-decoration: none;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    transition: 0.35s ease;
+}
+
+.source-btn span {
+    font-size: 15px;
+
+    transition: 0.35s ease;
+}
+
+.source-btn:hover {
+    background: #2e7d32;
+
+    color: #ffffff;
+
+    border-color: #2e7d32;
+}
+
+.source-btn:hover span {
+    transform: translate(3px, -3px);
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .projects-section {
+        padding: 90px 6%;
+    }
+
+    .projects-heading {
+        margin-bottom: 65px;
+    }
+
+    .project-item,
+    .project-item.reverse {
+        grid-template-columns: 38% 1fr;
+        gap: 45px;
+        margin-bottom: 70px;
+    }
+
+    .project-item.reverse .project-preview {
+        order: 2;
+    }
+
+    .project-item.reverse .project-details {
+        order: 1;
+    }
+
+    .project-preview {
+        height: 210px;
+    }
+
+    .project-details h3 {
+        font-size: 27px;
+    }
+
+    .project-details p {
+        font-size: 13px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 650px) {
+
+    .projects-section {
+        padding: 75px 6%;
+    }
+
+    .projects-heading {
+        margin-bottom: 50px;
+    }
+
+    .projects-heading span {
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+
+    .projects-heading h2 {
+        font-size: 34px;
+    }
+
+    .projects-heading p {
+        font-size: 13px;
+    }
+
+    .project-item,
+    .project-item.reverse {
+        display: flex;
+        flex-direction: column;
+
+        gap: 25px;
+
+        margin-bottom: 65px;
+    }
+
+    .project-item.reverse .project-preview,
+    .project-item.reverse .project-details {
+        order: unset;
+    }
+
+    .project-preview {
+        width: 100%;
+        height: 190px;
+    }
+
+    .project-details {
+        max-width: 100%;
+    }
+
+    .project-details h3 {
+        font-size: 25px;
+    }
+
+    .project-details p {
+        font-size: 13px;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 400px) {
+
+    .projects-section {
+        padding: 60px 5%;
+    }
+
+    .project-preview {
+        height: 160px;
+    }
+
+    .project-details h3 {
+        font-size: 23px;
+    }
+
+    .project-details p {
+        font-size: 12px;
+    }
+}
+
+/* =========================
+   EDUCATION SECTION
+========================= */
+
+.education-section {
+    width: 100%;
+    padding: 110px 7%;
+    background: #121212;
+    color: #ffffff;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.education-heading {
+    max-width: 650px;
+    margin: 0 auto 80px;
+    text-align: center;
+}
+
+.education-heading span {
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: #888;
+    font-weight: 600;
+}
+
+.education-heading h2 {
+    margin: 14px 0;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.education-heading h2 strong {
+    color: #9be58f;
+}
+
+.education-heading p {
+    color: #888;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   TIMELINE
+========================= */
+
+.education-timeline {
+    max-width: 950px;
+    margin: auto;
+    position: relative;
+}
+
+
+/* CENTER LINE */
+
+.education-timeline::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+
+    left: 150px;
+
+    width: 1px;
+
+    background: #333;
+}
+
+
+/* =========================
+   EDUCATION ITEM
+========================= */
+
+.education-item {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: 120px 60px 1fr;
+
+    align-items: start;
+
+    margin-bottom: 55px;
+}
+
+
+/* =========================
+   YEAR
+========================= */
+
+.education-year {
+    text-align: right;
+
+    padding-top: 25px;
+
+    padding-right: 25px;
+}
+
+.education-year span {
+    font-size: 13px;
+
+    color: #9be58f;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================
+   DOT
+========================= */
+
+.education-dot {
+    position: relative;
+
+    width: 13px;
+    height: 13px;
+
+    margin: 27px auto 0;
+
+    border-radius: 50%;
+
+    background: #9be58f;
+
+    box-shadow: 0 0 0 6px #1d2a1c;
+
+    z-index: 2;
+}
+
+
+/* =========================
+   EDUCATION CARD
+========================= */
+
+.education-card {
+    padding: 28px 30px;
+
+    background: #191919;
+
+    border: 1px solid #292929;
+
+    border-radius: 18px;
+
+    transition: 0.4s ease;
+}
+
+.education-card:hover {
+    transform: translateX(8px);
+
+    border-color: #3d563d;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+
+/* TYPE */
+
+.education-type {
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    color: #9be58f;
+
+    font-weight: 700;
+}
+
+
+/* TITLE */
+
+.education-card h3 {
+    margin: 10px 0 8px;
+
+    font-size: 23px;
+
+    font-weight: 500;
+
+    color: #ffffff;
+}
+
+
+/* COLLEGE / SCHOOL */
+
+.education-card h4 {
+    margin-bottom: 12px;
+
+    font-size: 14px;
+
+    font-weight: 400;
+
+    color: #bdbdbd;
+
+    line-height: 1.6;
+}
+
+
+/* DESCRIPTION */
+
+.education-card p {
+    color: #777;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   RESULT
+========================= */
+
+.education-result {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 15px;
+
+    border-top: 1px solid #2b2b2b;
+}
+
+.education-result span {
+    font-size: 11px;
+
+    color: #777;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+.education-result strong {
+    font-size: 20px;
+
+    color: #9be58f;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 800px) {
+
+    .education-section {
+        padding: 90px 6%;
+    }
+
+    .education-heading h2 {
+        font-size: 42px;
+    }
+
+    .education-item {
+        grid-template-columns: 90px 40px 1fr;
+    }
+
+    .education-timeline::before {
+        left: 110px;
+    }
+
+    .education-year {
+        padding-right: 15px;
+    }
+
+    .education-card {
+        padding: 24px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .education-section {
+        padding: 75px 6%;
+    }
+
+    .education-heading {
+        margin-bottom: 55px;
+    }
+
+    .education-heading h2 {
+        font-size: 34px;
+    }
+
+    .education-heading p {
+        font-size: 13px;
+    }
+
+    .education-item {
+        grid-template-columns: 55px 25px 1fr;
+        margin-bottom: 35px;
+    }
+
+    .education-timeline::before {
+        left: 67px;
+    }
+
+    .education-year {
+        padding-right: 8px;
+        padding-top: 23px;
+    }
+
+    .education-year span {
+        font-size: 9px;
+    }
+
+    .education-dot {
+        width: 10px;
+        height: 10px;
+        margin-top: 27px;
+        box-shadow: 0 0 0 4px #1d2a1c;
+    }
+
+    .education-card {
+        padding: 20px;
+    }
+
+    .education-card h3 {
+        font-size: 19px;
+    }
+
+    .education-card h4 {
+        font-size: 12px;
+    }
+
+    .education-card p {
+        font-size: 12px;
+    }
+
+    .education-result strong {
+        font-size: 17px;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 400px) {
+
+    .education-section {
+        padding: 60px 5%;
+    }
+
+    .education-item {
+        grid-template-columns: 48px 20px 1fr;
+    }
+
+    .education-timeline::before {
+        left: 58px;
+    }
+
+    .education-card {
+        padding: 17px;
+    }
+
+    .education-card h3 {
+        font-size: 17px;
+    }
+}
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    width: 100%;
+    padding: 70px 7% 25px;
+
+    background:#15171A;
+    color: #ffffff;
+}
+
+
+/* MAIN FOOTER */
+
+.footer-container {
+    max-width: 1150px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+
+    gap: 50px;
+
+    padding-bottom: 45px;
+
+    border-bottom: 1px solid #2d2d2d;
+}
+
+
+/* BRAND */
+
+.footer-brand h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.footer-brand h2 span {
+    color: #9be58f;
+}
+
+.footer-brand p {
+    max-width: 320px;
+
+    color: #888;
+
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+/* CONTACT */
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.footer-contact a {
+    color: #aaa;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    transition: 0.3s ease;
+}
+
+.footer-contact a:hover {
+    color: #9be58f;
+}
+
+
+/* SOCIAL */
+
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.footer-social a {
+    width: fit-content;
+
+    color: #aaa;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    transition: 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #9be58f;
+
+    transform: translateX(5px);
+}
+
+
+/* =========================
+   BOTTOM
+========================= */
+
+.footer-bottom {
+    max-width: 1150px;
+    margin: 22px auto 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: #666;
+
+    font-size: 11px;
+}
+
+.footer-bottom span {
+    color: #666;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 800px) {
+
+    .footer {
+        padding: 60px 6% 22px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px;
+    }
+
+    .footer-brand {
+        grid-column: span 2;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 550px) {
+
+    .footer {
+        padding: 50px 6% 20px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+
+        gap: 28px;
+    }
+
+    .footer-brand {
+        grid-column: span 1;
+    }
+
+    .footer-brand h2 {
+        font-size: 24px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+
+        gap: 8px;
+
+        text-align: center;
+    }
+}
